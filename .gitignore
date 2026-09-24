@@ -1,0 +1,76 @@
+# Datasets & Uploads (large, downloaded or generated separately)
+/datasets/
+/uploads/
+/reports/
+*.db
+*.sqlite
+*.sqlite3
+
+# ML Artifacts, Weights & Checkpoints (prevents GitHub 100MB file limit & repo bloat)
+*.pt
+*.pth
+*.weights
+*.onnx
+*.engine
+*.bin
+*.safetensors
+/weights/
+/runs/
+ml/models/trained/
+ml/models/pretrained/
+ml/datasets/processed/
+*.cache
+
+# Environment & Secrets (local config & API keys)
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+.npm/
+.eslintcache
+
+# Playwright Test Artifacts
+test-results/
+frontend/test-results/
+playwright-report/
+frontend/playwright-report/
+blob-report/
+
+# Scratch & Test Dumps
+out2.json
+test.json
+*.log
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# OS Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini

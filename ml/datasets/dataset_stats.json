@@ -1,0 +1,357 @@
+{
+  "datasets": [
+    {
+      "name": "Forward-Looking Sonar Object Detection",
+      "path": "D:\\hackathon_project\\datasets\\forward_sonar",
+      "yaml_path": "D:\\hackathon_project\\datasets\\forward_sonar\\data.yaml",
+      "exists": true,
+      "yaml_config": {
+        "path": "/mnt/DATA/EE25M305/Sonar_Vision/Sonar_Dataset",
+        "train": "images/train",
+        "val": "images/val",
+        "test": "images/test",
+        "names": {
+          "0": "mine",
+          "1": "can",
+          "2": "bottle",
+          "3": "drink-carton",
+          "4": "chain",
+          "5": "propeller",
+          "6": "tire",
+          "7": "hook",
+          "8": "valve",
+          "9": "shampoo-bottle",
+          "10": "standing-bottle"
+        }
+      },
+      "classes": {
+        "0": "mine",
+        "1": "can",
+        "2": "bottle",
+        "3": "drink-carton",
+        "4": "chain",
+        "5": "propeller",
+        "6": "tire",
+        "7": "hook",
+        "8": "valve",
+        "9": "shampoo-bottle",
+        "10": "standing-bottle"
+      },
+      "num_classes": 11,
+      "splits": {
+        "train": {
+          "image_dir": "D:\\hackathon_project\\datasets\\forward_sonar\\images\\train",
+          "label_dir": "D:\\hackathon_project\\datasets\\forward_sonar\\labels\\train",
+          "image_count": 1627,
+          "sample_dimensions": {
+            "438x658": 29,
+            "500x605": 21
+          },
+          "corrupt_images_sampled": 0,
+          "label_count": 1627,
+          "missing_labels": 0,
+          "class_distribution": {
+            "mine": 157,
+            "can": 295,
+            "bottle": 363,
+            "drink-carton": 266,
+            "chain": 178,
+            "propeller": 122,
+            "tire": 266,
+            "hook": 111,
+            "valve": 159,
+            "shampoo-bottle": 81,
+            "standing-bottle": 55
+          },
+          "empty_labels": 0,
+          "objects_per_image": {
+            "min": 1,
+            "max": 3,
+            "mean": 1.26
+          },
+          "bbox_width": {
+            "min": 0.0685,
+            "max": 0.47,
+            "mean": 0.1632
+          },
+          "bbox_height": {
+            "min": 0.0711,
+            "max": 0.4132,
+            "mean": 0.1448
+          }
+        },
+        "val": {
+          "image_dir": "D:\\hackathon_project\\datasets\\forward_sonar\\images\\val",
+          "label_dir": "D:\\hackathon_project\\datasets\\forward_sonar\\labels\\val",
+          "image_count": 202,
+          "sample_dimensions": {
+            "438x658": 26,
+            "500x605": 24
+          },
+          "corrupt_images_sampled": 0,
+          "label_count": 202,
+          "missing_labels": 0,
+          "class_distribution": {
+            "mine": 18,
+            "can": 35,
+            "bottle": 37,
+            "drink-carton": 39,
+            "chain": 29,
+            "propeller": 8,
+            "tire": 28,
+            "hook": 10,
+            "valve": 26,
+            "shampoo-bottle": 11,
+            "standing-bottle": 6
+          },
+          "empty_labels": 0,
+          "objects_per_image": {
+            "min": 1,
+            "max": 2,
+            "mean": 1.22
+          },
+          "bbox_width": {
+            "min": 0.0709,
+            "max": 0.47,
+            "mean": 0.1668
+          },
+          "bbox_height": {
+            "min": 0.0711,
+            "max": 0.4132,
+            "mean": 0.1475
+          }
+        },
+        "test": {
+          "image_dir": "D:\\hackathon_project\\datasets\\forward_sonar\\images\\test",
+          "label_dir": "D:\\hackathon_project\\datasets\\forward_sonar\\labels\\test",
+          "image_count": 206,
+          "sample_dimensions": {
+            "438x658": 29,
+            "500x605": 21
+          },
+          "corrupt_images_sampled": 0,
+          "label_count": 206,
+          "missing_labels": 0,
+          "class_distribution": {
+            "mine": 20,
+            "can": 37,
+            "bottle": 49,
+            "drink-carton": 44,
+            "chain": 19,
+            "propeller": 7,
+            "tire": 37,
+            "hook": 12,
+            "valve": 23,
+            "shampoo-bottle": 7,
+            "standing-bottle": 4
+          },
+          "empty_labels": 0,
+          "objects_per_image": {
+            "min": 1,
+            "max": 3,
+            "mean": 1.26
+          },
+          "bbox_width": {
+            "min": 0.0709,
+            "max": 0.448,
+            "mean": 0.1618
+          },
+          "bbox_height": {
+            "min": 0.0711,
+            "max": 0.438,
+            "mean": 0.1364
+          }
+        }
+      },
+      "total_images": 2035,
+      "total_labels": 2035,
+      "total_missing_labels": 0,
+      "total_empty_labels": 0,
+      "total_corrupt_images_sampled": 0,
+      "image_formats": {
+        ".png": 1868,
+        ".jpg": 167
+      },
+      "common_dimensions": {
+        "438x658": 84,
+        "500x605": 66
+      },
+      "total_class_distribution": {
+        "mine": 195,
+        "can": 367,
+        "bottle": 449,
+        "drink-carton": 349,
+        "chain": 226,
+        "propeller": 137,
+        "tire": 331,
+        "hook": 133,
+        "valve": 208,
+        "shampoo-bottle": 99,
+        "standing-bottle": 65
+      },
+      "total_objects": 2559,
+      "objects_per_image_overall": {
+        "min": 1,
+        "max": 3,
+        "mean": 1.26
+      },
+      "modality": "Forward-Looking Sonar",
+      "source": "Kaggle: forward-looking-sonar-object-detection-dataset"
+    },
+    {
+      "name": "Sonar Mine Detection (MILCO/NonMILCO)",
+      "path": "D:\\hackathon_project\\datasets\\sonar_mine",
+      "yaml_path": "D:\\hackathon_project\\datasets\\sonar_mine\\mine.yaml",
+      "exists": true,
+      "yaml_config": {
+        "path": "/kaggle/input/sonar-imaging-mine-detection/",
+        "train": "train/train/images/",
+        "val": "val/val/images/",
+        "test": "test/test/images/",
+        "nc": 2,
+        "names": [
+          "MILCO",
+          "NonMILCO"
+        ],
+        "model": "yolov8s.pt",
+        "imgsz": 640,
+        "epochs": 30,
+        "batch_size": 16,
+        "optimizer": "SGD",
+        "lr0": 0.01,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "augment": "hflip, colorjitter",
+        "device": "cuda"
+      },
+      "classes": {
+        "0": "MILCO",
+        "1": "NonMILCO"
+      },
+      "num_classes": 2,
+      "splits": {
+        "train": {
+          "image_dir": "D:\\hackathon_project\\datasets\\sonar_mine\\train\\train\\images",
+          "label_dir": "D:\\hackathon_project\\datasets\\sonar_mine\\train\\train\\labels",
+          "image_count": 819,
+          "sample_dimensions": {
+            "416x416": 26,
+            "1024x1024": 24
+          },
+          "corrupt_images_sampled": 0,
+          "label_count": 819,
+          "missing_labels": 0,
+          "class_distribution": {
+            "MILCO": 315,
+            "NonMILCO": 178
+          },
+          "empty_labels": 594,
+          "objects_per_image": {
+            "min": 0,
+            "max": 13,
+            "mean": 0.6
+          },
+          "bbox_width": {
+            "min": 0.0,
+            "max": 0.3113,
+            "mean": 0.0569
+          },
+          "bbox_height": {
+            "min": 0.0,
+            "max": 0.7588,
+            "mean": 0.033
+          }
+        },
+        "val": {
+          "image_dir": "D:\\hackathon_project\\datasets\\sonar_mine\\val\\val\\images",
+          "label_dir": "D:\\hackathon_project\\datasets\\sonar_mine\\val\\val\\labels",
+          "image_count": 176,
+          "sample_dimensions": {
+            "1024x1024": 25,
+            "416x416": 25
+          },
+          "corrupt_images_sampled": 0,
+          "label_count": 176,
+          "missing_labels": 0,
+          "class_distribution": {
+            "MILCO": 59,
+            "NonMILCO": 34
+          },
+          "empty_labels": 133,
+          "objects_per_image": {
+            "min": 0,
+            "max": 9,
+            "mean": 0.53
+          },
+          "bbox_width": {
+            "min": 0.018,
+            "max": 0.1575,
+            "mean": 0.0619
+          },
+          "bbox_height": {
+            "min": 0.0137,
+            "max": 0.7584,
+            "mean": 0.0394
+          }
+        },
+        "test": {
+          "image_dir": "D:\\hackathon_project\\datasets\\sonar_mine\\test\\test\\images",
+          "label_dir": "D:\\hackathon_project\\datasets\\sonar_mine\\test\\test\\labels",
+          "image_count": 175,
+          "sample_dimensions": {
+            "1024x1024": 28,
+            "416x416": 22
+          },
+          "corrupt_images_sampled": 0,
+          "label_count": 175,
+          "missing_labels": 0,
+          "class_distribution": {
+            "MILCO": 63,
+            "NonMILCO": 19
+          },
+          "empty_labels": 139,
+          "objects_per_image": {
+            "min": 0,
+            "max": 8,
+            "mean": 0.47
+          },
+          "bbox_width": {
+            "min": 0.0137,
+            "max": 0.143,
+            "mean": 0.0538
+          },
+          "bbox_height": {
+            "min": 0.0098,
+            "max": 0.0757,
+            "mean": 0.0284
+          }
+        }
+      },
+      "total_images": 1170,
+      "total_labels": 1170,
+      "total_missing_labels": 0,
+      "total_empty_labels": 866,
+      "total_corrupt_images_sampled": 0,
+      "image_formats": {
+        ".jpg": 1170
+      },
+      "common_dimensions": {
+        "1024x1024": 77,
+        "416x416": 73
+      },
+      "total_class_distribution": {
+        "MILCO": 437,
+        "NonMILCO": 231
+      },
+      "total_objects": 668,
+      "objects_per_image_overall": {
+        "min": 0,
+        "max": 13,
+        "mean": 0.57
+      },
+      "modality": "Sonar Mine Imagery (Side-Scan / SAR)",
+      "source": "Kaggle: sonar-imaging-mine-detection"
+    }
+  ],
+  "generated_at": "2026-09-10T12:24:36.038369+00:00"
+}
